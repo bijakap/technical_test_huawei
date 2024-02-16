@@ -45,7 +45,7 @@ router.get("/forms/:id", (req, res) => {
     return res.status(404).json({ error: "Data tidak ditemukan" });
   }
 
-  res.json(selectedData);
+  res.json({ data: selectedData });
 });
 
 module.exports = router;

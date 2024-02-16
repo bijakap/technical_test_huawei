@@ -29,10 +29,21 @@ form.addEventListener("submit", async (event) => {
   }
 
   try {
-    // Simulate fetching or use actual fetch API
-    await simulateFetching();
-    console.log("done");
-    showResult();
+    const response = await fetch("http://localhost:3000/forms/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(jsonData),
+    }).catch((e) => {
+      document.getElementById("post-error").textContent = e.toString();
+    });
+
+    if (response.ok) {
+      showResult();
+      console.log("done");
+    }
+    resetButton();
   } catch (error) {
     console.error("Error during fetching:", error);
     resetButton();
@@ -97,18 +108,13 @@ function clearErrorMessages(form) {
       document.getElementById(element.name + "-error").textContent = "";
     }
   }
+
+  document.getElementById("post-error").textContent = "";
 }
 
 const resetButton = () => {
   button.innerHTML = "Kirim";
   button.disabled = false;
-};
-
-const simulateFetching = () => {
-  return new Promise((resolve) => {
-    // Simulate a 2-second delay
-    setTimeout(resolve, 2000);
-  });
 };
 
 const showResult = () => {
