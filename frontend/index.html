@@ -3,11 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Registrasi Form</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <p>Initial Page</p>
+    <main class="main-bg child-center">
+      <section id="card-form" class="card">
+        <p class="title">Registrasi Form</p>
+        <form id="registrasi-form" action="" method="post">
+          <div>
+            <label>Nama <span>*</span></label>
+            <input id="nama" name="nama" type="text" />
+            <div class="error-message" id="nama-error"></div>
+          </div>
+          <div>
+            <label>Email <span>*</span></label>
+            <input id="email" name="email" type="email" />
+            <div class="error-message" id="email-error"></div>
+          </div>
+          <div>
+            <label>Nomor Telepon <span>*</span></label>
+            <div class="phone-input" id="nomor_telepon-container">
+              <p>+62</p>
+              <input id="nomor_telepon" name="nomor_telepon" type="number" />
+            </div>
+            <div class="error-message" id="nomor_telepon-error"></div>
+          </div>
+          <button class="button" id="button" type="submit">Kirim</button>
+        </form>
+      </section>
+      <!-- // result -->
+      <section class="card" id="result">
+        <h3>Form Tersimpan!</h3>
+        <p>Data formulir Anda telah berhasil disimpan.</p>
+        <button id="btnBack" class="button">Registrasi Form Kembali</button>
+      </section>
+    </main>
     <script src="./js/index.js"></script>
   </body>
 </html>

@@ -2,4 +2,144 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+
+.main-bg {
+  background: rgb(110, 195, 255);
+  background: linear-gradient(
+    135deg,
+    rgba(110, 195, 255, 1) 0%,
+    rgba(72, 178, 255, 1) 50%,
+    rgba(15, 154, 255, 1) 100%
+  );
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.child-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  padding: 24px;
+  width: 500px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.28);
+  border-radius: 20px;
+}
+
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card form span {
+  color: red;
+}
+
+.card form div input {
+  margin-top: 8px;
+  width: 100%;
+  height: 36px;
+  border-radius: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 14px;
+  font-weight: normal;
+  border: 1px solid rgb(137, 151, 155);
+  outline: none;
+  color: rgb(33, 49, 60);
+  background-color: rgb(255, 255, 255);
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+}
+
+.phone-input p {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding: 4px 8px;
+
+  border: 1px solid rgb(137, 151, 155);
+  border-radius: 4px 0px 0px 4px;
+}
+
+.phone-input input[type="number"] {
+  border-radius: 0px 4px 4px 0px;
+  border-left: 0px;
+}
+
+.button {
+  background: linear-gradient(
+    135deg,
+    rgba(110, 195, 255, 1) 0%,
+    rgba(72, 178, 255, 1) 50%,
+    rgba(15, 154, 255, 1) 100%
+  );
+  border-radius: 8px;
+  border-style: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+  padding: 4px 8px;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 15px;
+  transition-duration: 0.1s;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0 2.6rem;
+  }
+}
+
+#result {
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  gap: 4px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
 }
