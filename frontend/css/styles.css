@@ -152,6 +152,25 @@ input[type="number"]::-webkit-outer-spin-button {
   padding: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  /* Media query untuk tampilan mobile */
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .child-center {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Media query untuk tampilan sangat kecil (misalnya, ponsel) */
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .search {
   height: 100%;
   padding: 20px 0px 0px 20px;
