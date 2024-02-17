@@ -5,16 +5,23 @@ Buatlah halaman web sederhana menggunakan HTML, CSS, dan JavaScript. Halaman ter
 
 ## Menjalankan Proyek
 
-1. **Buka dengan Browser:**
+1. **Jalankan Backend:**
 
-   - Buka file `index.html` menggunakan browser web pilihan Anda.
-     - Klik kanan pada file `index.html`.
-     - Pilih opsi "Open with" atau "Buka dengan".
-     - Pilih browser seperti Chrome, Firefox, atau browser lainnya.
+   - Backend harus berjalan pada port 3000
 
-2. **Lihat Hasil:**
-   - Browser akan membuka halaman web proyek Anda.
-   - Jelajahi dan interaksikan dengan halaman sesuai dengan kebutuhan proyek.
+2. **Instal Dependencies:**
+
+   - Instal dependencies menggunakan npm:
+     ```
+     npm install
+     ```
+
+3. **Jalankan Frontend:**
+
+   - Jalankan skrip pengujian menggunakan perintah:
+     ```
+     npm start
+     ```
 
 ## Struktur Direktori
 

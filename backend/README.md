@@ -13,7 +13,6 @@ bentuk array di dalam server. Pastikan bahwa server dapat mengembalikan data yan
      npm install
      ```
 
-
 2. **Jalankan Server:**
 
    - Gunakan perintah berikut untuk menjalankan server Express:
@@ -24,4 +23,13 @@ bentuk array di dalam server. Pastikan bahwa server dapat mengembalikan data yan
 
 3. **Endpoints API:**
    - Deskripsi singkat tentang endpoint-endpoint
-
+     - /forms (GET) : get all forms
+     - /froms/submit (POST) : submit forms
+       ```
+       {
+          "nama" : "Bijak",
+          "email" : "bijak.algifan.p@gmail.com",
+          "nomor_telepon" : "+6287737771211"
+       }
+       ```
+     - /froms/{id} (GET) : get forms by id

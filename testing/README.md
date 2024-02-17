@@ -5,19 +5,23 @@ Buatlah skrip otomatis menggunakan Selenium atau Puppeteer untuk mengotomatisasi
 
 ## Menjalankan Aplikasi untuk Testing
 
-1. **Instal Dependencies:**
+1. **Jalankan Frontend dan Backend:**
+
+   - Frontend harus berjalan pada port 8080
+
+2. **Instal Dependencies:**
 
    - Instal dependencies menggunakan npm:
      ```
      npm install
      ```
 
-2. **Jalankan Testing:**
+3. **Jalankan Testing:**
 
    - Jalankan skrip pengujian menggunakan perintah:
      ```
      npm start
      ```
 
-3. **Lihat Hasil:**
+4. **Lihat Hasil:**
    - Lihat output di terminal atau lihat hasil skenario pengujian di browser yang dihasilkan oleh Puppeteer.

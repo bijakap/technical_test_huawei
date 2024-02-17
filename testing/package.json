@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "puppeteer": "^22.0.0"
+    "puppeteer": "^22.0.0",
+    "technical_test_huawei": "file:.."
   }
 }
