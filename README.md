@@ -8,6 +8,11 @@
 
 ### Install All
 
+Pastikan Anda telah menginstal paket concurrently sebelumnya dengan menjalankan perintah:
+```bash
+npm install concurrently --save-dev
+```
+
 Untuk menginstal dependensi pada semua proyek (backend, frontend, dan testing) secara bersamaan, Anda dapat menggunakan perintah berikut:
 
 ```bash
@@ -15,10 +20,6 @@ npm run install-all
 ```
 
 ### 1. Start All
-Pastikan Anda telah menginstal paket concurrently sebelumnya dengan menjalankan perintah:
-```bash
-npm install concurrently --save-dev
-```
 Untuk menjalankan semua proyek (backend, frontend, dan testing) secara bersamaan, gunakan perintah:
 
 ```bash
